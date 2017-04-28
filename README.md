@@ -2,8 +2,10 @@
 Android library with custom Edit-text view purpose is to provide functionality to listen when user finished typing. Implement an interface to listen when user stop typing in edit text or finish typing in edit text.
 
 ## Attribute
-### edit_interval
+### edit_interval (in Milliseconds)
 You can set custom time interval if user start typing and then he do not enter any character after this interval finish callback will be trigger.
+
+**Default interval =700 ms**
 
 you can set in XML like this
 ```
@@ -79,12 +81,12 @@ dependencies {
   
   **JAVA**
 ```
-finishEditText1.setEditIntervel(300);
+finishEditText1.setEditIntervel(600);
 
 finishEditText1.addFinishEditingListener(new FinishEditingListener() {
     @Override
     public void onEditingFinished() {
-        Log.d("interval", editText3.getEditIntervel() + "");
+        Log.d("interval", finishEditText1.getEditIntervel() + "");
     }
 });
 ```
