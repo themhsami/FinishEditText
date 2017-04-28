@@ -13,8 +13,6 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * Created by Android on 4/28/2017.
@@ -31,7 +29,6 @@ public class FinishEditText extends EditText {
      * If user type a character between this time than it means user still typing
      *****/
     private long editIntervel = 700;
-    private Timer timer;
     Handler handler;
 
 
@@ -112,29 +109,12 @@ public class FinishEditText extends EditText {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                if (timer != null)
-//                    timer.cancel();
                 if (handler != null)
                     handler.removeCallbacks(finishedCallback);
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-//                timer = new Timer();
-//                timer.schedule(new TimerTask() {
-//                    @Override
-//                    public void run() {
-//                        if (observers != null) {
-//                            for (int index = 0; index < observers.size(); index++) {
-//                                ((Activity) getContext()).runOnUiThread(new Runnable() {
-//                                    public void run() {
-//                                    }
-//                                });
-//                                observers.get(index).onEditingFinished();
-//                            }
-//                        }
-//                    }
-//                }, editIntervel > 0 ? editIntervel : 700);
                 handler.postDelayed(finishedCallback, editIntervel > 0 ? editIntervel : 700);
             }
         });
