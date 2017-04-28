@@ -1,6 +1,10 @@
 # FinishEditText
 Android library with custom Edit-text view purpose is to provide functionality to listen when user finished editing.
 
+
+
+
+
 ## Attribute
 ### edit_interval (in Milliseconds)
 You can set custom time interval if user start typing and then he do not enter any character after this interval finish callback will be trigger.
@@ -22,6 +26,10 @@ finishEditText.getEditIntervel();
 <br>
 
 <img src="https://raw.githubusercontent.com/themhsami/FinishEditText/master/screenshot/Screenshot.png" align="center" height="500"  alt="FinishEditText screenshot" >
+<br>
+
+[![](https://jitpack.io/v/themhsami/FinishEditText.svg)](https://jitpack.io/#themhsami/FinishEditText)
+
 
 ## How to integrate it
 ### 1. Gradle :
