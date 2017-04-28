@@ -1,5 +1,5 @@
 # FinishEditText
-Android library with custom Edit-text view purpose is to provide functionality to listen when user finished typing. Implement an interface to listen when user stop typing in edit text or finish typing in edit text.
+Android library with custom Edit-text view purpose is to provide functionality to listen when user finished editing.
 
 ## Attribute
 ### edit_interval (in Milliseconds)
