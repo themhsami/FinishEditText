@@ -19,7 +19,7 @@ finishEditText.getEditIntervel();
 
 <br>
 
-<img src="https://raw.githubusercontent.com/themhsami/FinishEditText/master/screenshot/Screenshot.png" align="center" height="500" width="500" alt="FinishEditText screenshot" >
+<img src="https://raw.githubusercontent.com/themhsami/FinishEditText/master/screenshot/Screenshot.png" align="center" height="500"  alt="FinishEditText screenshot" >
 
 ## How to integrate it
 ### 1. Gradle :
