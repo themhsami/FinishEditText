@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.github.themhsami.finishedittext.MainActivity">
+
+    <com.github.themhsami.libfinishedittext.FinishEditText
+        android:id="@+id/finishEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Start typing for on finish typing listen"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_hint"
+        app:edit_interval="2000" />
+
+    <com.github.themhsami.libfinishedittext.FinishEditText
+        android:id="@+id/finishEditText2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="Start typing for on finish typing listen"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_hint" />
+
+    <com.github.themhsami.libfinishedittext.FinishEditText
+        android:id="@+id/finishEditText3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="Start typing for on finish typing listen"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_hint" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
